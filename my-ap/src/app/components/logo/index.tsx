@@ -32,15 +32,13 @@ const Image = styled.div`
   }
 `;
 
-export function Logo(props: ILogoProps) {
-  const { color, bgColor } = props;
-
+export function Logo() {
   return (
     <LogoContainer>
       <Image>
-        <img src={bgColor === 'dark' ? CarLogoDarkImg : CarLogoImg} />
+        <img src={CarLogoImg} />
       </Image>
-      <LogoText color={color || 'dark'}>Yourcar.</LogoText>
+      <LogoText>Supercar Rentals</LogoText>
     </LogoContainer>
   );
 }
