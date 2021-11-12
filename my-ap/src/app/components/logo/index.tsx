@@ -36,7 +36,7 @@ export function Logo() {
   return (
     <LogoContainer>
       <Image>
-        <img src={CarLogoImg} />
+        <img src={CarLogoImg} alt="logo" />
       </Image>
       <LogoText>Supercar Rentals</LogoText>
     </LogoContainer>

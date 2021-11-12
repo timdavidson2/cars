@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { Logo } from '../logo';
 
 const NavbarContainer = styled.div`
   min-heght: 68px;
@@ -15,6 +16,14 @@ const NavbarContainer = styled.div`
 `}
 `;
 
+const LogoContainer = styled.div``;
+
 export function NavBar() {
-  return <NavbarContainer></NavbarContainer>;
+  return (
+    <NavbarContainer>
+      <LogoContainer>
+        <Logo />
+      </LogoContainer>
+    </NavbarContainer>
+  );
 }
