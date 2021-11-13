@@ -23,8 +23,13 @@
   "dependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
+    "@nestjs/graphql": "^9.1.1",
+    "@nestjs/mongoose": "^9.0.1",
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/typeorm": "^8.0.2",
+    "apollo-server-express": "^3.5.0",
+    "graphql": "^15.7.2",
+    "mongoose": "^6.0.12",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3-rc.0",
     "nest-config": "^1.0.0",
