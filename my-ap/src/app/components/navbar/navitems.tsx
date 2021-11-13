@@ -11,11 +11,22 @@ const ListContainer = styled.ul`
 `;
 
 const NavItem = styled.li<{ menu?: any }>`
-  ${tw`mr-5 text-xs font-medium text-black transition duration-500 ease-in-out cursor-pointer md:text-base md:mr-5`}
+  ${tw`mr-5 
+  text-xs 
+  font-medium 
+  text-black 
+  transition
+   duration-500 
+   ease-in-out 
+   cursor-pointer
+    md:text-base 
+    md:mr-5`}
   ${({ menu }) =>
     menu &&
     css`
-      ${tw`mb-3 text-xl text-white `};
+      ${tw`mb-3 
+      text-xl 
+      text-white `};
     `};
 `;
 
