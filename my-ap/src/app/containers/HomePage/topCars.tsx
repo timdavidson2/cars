@@ -98,7 +98,7 @@ export function TopCars() {
 
   const fetchTopCars = async () => {
     setLoading(true);
-    const cars = await carService.getCars().catch((err: any) => {
+    const cars = await carService.getCars().catch((err) => {
       console.log('Error: ', err);
     });
 
@@ -145,11 +145,11 @@ export function TopCars() {
   return (
     <TopCarsContainer>
       <Title>Explore Our Top Deals</Title>
-      {isLoading && (
+      {/* {isLoading && (
         <LoadingContainer>
           <MoonLoader loading size={20} />
         </LoadingContainer>
-      )}
+      )} */}
       {isEmptyTopCars && !isLoading && <EmptyCars>No Cars To Show!</EmptyCars>}
       {!isEmptyTopCars && !isLoading && (
         <CarsContainer>
@@ -160,7 +160,7 @@ export function TopCars() {
             plugins={[
               'clickToChange',
               {
-                resolve: slidesToShowPlugin,
+                // resolve: slidesToShowPlugin,
                 options: {
                   numberOfSlides: 3,
                 },
@@ -170,7 +170,7 @@ export function TopCars() {
               640: {
                 plugins: [
                   {
-                    resolve: slidesToShowPlugin,
+                    // resolve: slidesToShowPlugin,
                     options: {
                       numberOfSlides: 1,
                     },
@@ -180,7 +180,7 @@ export function TopCars() {
               900: {
                 plugins: [
                   {
-                    resolve: slidesToShowPlugin,
+                    // resolve: slidesToShowPlugin,
                     options: {
                       numberOfSlides: 2,
                     },
