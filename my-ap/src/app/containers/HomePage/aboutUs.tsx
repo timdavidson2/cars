@@ -24,8 +24,8 @@ const AboutUsContainer = styled.div`
 
 const CarContainer = styled.div`
   width: auto;
-  height: 15em;
-  margin-left: -50px;
+  height: 15rem;
+  margin-left: ;
   img {
     width: auto;
     height: 100%;
@@ -78,7 +78,7 @@ export function AboutUs() {
   return (
     <AboutUsContainer>
       <CarContainer>
-        <img src={LamboImg} />
+        <img src={LamboImg} alt="black lambo" />
       </CarContainer>
       <InfoContainer>
         <Title>

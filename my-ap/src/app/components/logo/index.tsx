@@ -3,7 +3,6 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 import CarLogoImg from '../../../assets/images/carLogo.png';
-import CarLogoDarkImg from '../../../assets/images/carLogo2.png';
 
 const LogoContainer = styled.div`
   ${tw`
