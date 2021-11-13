@@ -27,6 +27,7 @@ const Title = styled.h2`
     lg:text-5xl
     text-black
     font-extrabold
+    mt-4
   `};
 `;
 
@@ -35,7 +36,7 @@ const StepsContainer = styled.div`
     flex
     justify-evenly
     flex-wrap
-    mt-7
+    mt-5
     lg:mt-16
   `};
 `;
@@ -81,3 +82,53 @@ const StepDescription = styled.p`
     text-gray-600
   `};
 `;
+
+const StepIcon = styled.span`
+  ${tw`
+    text-red-500
+    text-3xl
+  `};
+`;
+
+export function BookingSteps() {
+  return (
+    <Container>
+      <Title>How We Do It</Title>
+      <StepsContainer>
+        <StepContainer>
+          <Step>
+            <StepIcon>
+              <FontAwesomeIcon icon={faMapMarkedAlt} />
+            </StepIcon>
+          </Step>
+          <StepTitle>Choose Location</StepTitle>
+          <StepDescription>
+            Find the nearest Yourcar point and book your car.
+          </StepDescription>
+        </StepContainer>
+        <StepContainer>
+          <Step>
+            <StepIcon>
+              <FontAwesomeIcon icon={faCalendarAlt} />
+            </StepIcon>
+          </Step>
+          <StepTitle>Pick-Up Date</StepTitle>
+          <StepDescription>
+            Pickup the Best Date to rent a car for you.
+          </StepDescription>
+        </StepContainer>
+        <StepContainer>
+          <Step>
+            <StepIcon>
+              <FontAwesomeIcon icon={faCarSide} />
+            </StepIcon>
+          </Step>
+          <StepTitle>Book Your Car</StepTitle>
+          <StepDescription>
+            Book your nice car with ease in one single click
+          </StepDescription>
+        </StepContainer>
+      </StepsContainer>
+    </Container>
+  );
+}
