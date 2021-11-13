@@ -34,7 +34,7 @@ export default {
     fill: "#373a47",
   },
   bmItemList: {
-    color: "#b8b7ad",
+    color: "#fff",
     padding: "0.8em",
   },
   bmItem: {

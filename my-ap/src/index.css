@@ -157,8 +157,9 @@ code {
 
 a {
   text-decoration: none;
+  color: #ff2800;
 }
 a:hover {
-  color: gray;
+  color: #d3a067;
   font-size: 1.1rem;
 }

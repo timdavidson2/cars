@@ -1,16 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
-import { Slide as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
-import { SCREENS } from '../responsive/index';
+import { SCREENS } from '../responsive';
+import menuStyles from './menuStyles';
 
 const ListContainer = styled.ul`
   ${tw`flex list-none `};
 `;
 
-const NavItem = styled.li`
+const NavItem = styled.li<{ menu?: any }>`
   ${tw`mr-5 text-xs font-medium text-black transition duration-500 ease-in-out cursor-pointer md:text-base md:mr-5`}
+  ${({ menu }) =>
+    menu &&
+    css`
+      ${tw`mb-3 text-xl text-white `};
+    `};
 `;
 
 export function NavItems() {
@@ -18,18 +24,18 @@ export function NavItems() {
 
   if (isMobile)
     return (
-      <Menu>
+      <Menu right styles={menuStyles}>
         <ListContainer>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Home</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Cars</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Services</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Contact Us</a>
           </NavItem>
         </ListContainer>
