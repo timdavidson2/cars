@@ -39,3 +39,26 @@ const StepsContainer = styled.div`
     lg:mt-16
   `};
 `;
+
+const StepContainer = styled.div`
+  ${tw`
+    flex
+    flex-col
+    md:w-96
+    items-center
+    transition-colors
+    hover:text-red-500
+    m-3
+  `};
+`;
+
+const Step = styled.div`
+  box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.4);
+  ${tw`
+    flex
+    rounded-lg
+    items-center
+    justify-center
+    p-6
+  `};
+`;
