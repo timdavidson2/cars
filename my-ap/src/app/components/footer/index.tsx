@@ -41,7 +41,7 @@ const BottomContainer = styled.div`
 `;
 
 const CopyrightText = styled.small`
-  font-size: 12px;
+  font-size: 1rem;
   ${tw`
     text-gray-300
   `}
@@ -222,8 +222,7 @@ export function Footer() {
       </InnerContainer>
       <BottomContainer>
         <CopyrightText>
-          Copyright &copy; {new Date().getFullYear()} Supercar Rentals All
-          rights reserved.
+          Copyright &copy; 2021 Supercar Rentals All rights reserved.
         </CopyrightText>
       </BottomContainer>
     </FooterContainer>
