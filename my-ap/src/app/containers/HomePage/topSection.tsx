@@ -5,6 +5,7 @@ import tw from 'twin.macro';
 import MclarenCarImg from '../../../assets/images/mclaren-orange-big.png';
 import BlobImg from '../../../assets/images/blob.svg';
 import { SCREENS } from '../../components/responsive';
+import { Button } from '../../components/buttons';
 
 const TopSectionContainer = styled.div`
   min-height: 25rem;
@@ -135,6 +136,14 @@ const StandAloneCar = styled.div`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  ${tw`
+        flex
+        flex-wrap
+        mt-4
+    `}
+`;
+
 export function TopSection() {
   return (
     <TopSectionContainer>
@@ -145,6 +154,10 @@ export function TopSection() {
           does everday? Look around and push that rental button today. You know
           you deserve it!
         </Description>
+        <ButtonsContainer>
+          <Button text="Book Your Ride" />
+          <Button theme="filled" text="Sell Your Car" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
