@@ -17,8 +17,8 @@ const URI = process.env.MONGODB_URL;
       }
     }),
     GraphQLModule.forRoot({ 
-      playground: (process.env.NODE_ENV === "development" && true) || false,
-      debug: (process.env.NODE_ENV === "development" && true) || false,
+      playground:  true,
+      debug:  true,
       installSubscriptionHandlers: true,
       autoSchemaFile:true,
 }),
