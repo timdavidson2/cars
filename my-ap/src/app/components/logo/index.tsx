@@ -3,6 +3,12 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 import CarLogoImg from '../../../assets/images/carLogo.png';
+import CarLogoDarkImg from '../../../assets/images/carLogo2.png';
+
+interface ILogoProps {
+  color?: 'white' | 'dark';
+  bgColor?: 'white' | 'dark';
+}
 
 const LogoContainer = styled.div`
   ${tw`
@@ -31,13 +37,14 @@ const Image = styled.div`
   }
 `;
 
-export function Logo() {
+export function Logo(props: ILogoProps) {
+  const { color, bgColor } = props;
   return (
     <LogoContainer>
       <Image>
-        <img src={CarLogoImg} alt="logo" />
+        <img src={bgColor === 'dark' ? CarLogoDarkImg : CarLogoImg} />
       </Image>
-      <LogoText>Supercar Rentals</LogoText>
+      <LogoText color={'white' || 'dark'}>Supercar Rentals</LogoText>
     </LogoContainer>
   );
 }

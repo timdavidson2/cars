@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { ICar } from '../../../typings/car';
 import { Car } from '../../components/car';
-import Carousel, { Dots, slidesToShowPlugin } from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+// import Carousel, { Dots, slidesToShowPlugin } from '@brainhubeu/react-carousel';
+// import '@brainhubeu/react-carousel/lib/style.css';
 import { useMediaQuery } from 'react-responsive';
 import { SCREENS } from '../../components/responsive';
 import carService from '../../services/carService';
@@ -153,7 +153,7 @@ export function TopCars() {
       {isEmptyTopCars && !isLoading && <EmptyCars>No Cars To Show!</EmptyCars>}
       {!isEmptyTopCars && !isLoading && (
         <CarsContainer>
-          <Carousel
+          {/* <Carousel
             value={current}
             onChange={setCurrent}
             slides={cars}
@@ -188,8 +188,8 @@ export function TopCars() {
                 ],
               },
             }}
-          />
-          <Dots value={current} onChange={setCurrent} number={numberOfDots} />
+          /> */}
+          {/* <Dots value={current} onChange={setCurrent} number={numberOfDots} /> */}
         </CarsContainer>
       )}
     </TopCarsContainer>

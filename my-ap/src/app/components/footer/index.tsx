@@ -1,12 +1,11 @@
 import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { Logo } from '../logo';
 
 const FooterContainer = styled.div`
-  //min-height: 24em;
+  //min-height: 24rem;
   background-color: #1d2124;
   ${tw`
     flex
@@ -155,11 +154,11 @@ export function Footer() {
     <FooterContainer>
       <InnerContainer>
         <AboutContainer>
-          {/* <Logo color:white bgColor="dark" /> */}
+          <Logo color="white" bgColor="dark" />
           <AboutText>
-            Yourcar is a Car renting and selling company located in many
-            countries across the world which has high quality cars and top rated
-            service.
+            Supercar Rentals is a Car renting and selling company located in
+            many countries across the world which has high quality cars and top
+            rated service.
           </AboutText>
         </AboutContainer>
         <SectionContainer>
@@ -208,7 +207,7 @@ export function Footer() {
             <RedIcon>
               <FontAwesomeIcon icon={faPhoneAlt} />
             </RedIcon>
-            <SmallText>+91 555-234-8469</SmallText>
+            <SmallText>888.555.1212</SmallText>
           </HorizontalContainer>
         </SectionContainer>
         <SectionContainer>
@@ -223,8 +222,8 @@ export function Footer() {
       </InnerContainer>
       <BottomContainer>
         <CopyrightText>
-          Copyright &copy; {new Date().getFullYear()} Yourcar. All rights
-          reserved.
+          Copyright &copy; {new Date().getFullYear()} Supercar Rentals All
+          rights reserved.
         </CopyrightText>
       </BottomContainer>
     </FooterContainer>
